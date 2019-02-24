@@ -12,7 +12,7 @@
       },
       "APIManagementInstanceName": {
         "type": "string",
-        "defaultValue": "apimcharottest"
+        "defaultValue": "apimcharotinst"
       },
       "PublisherName": {
         "type": "string",
