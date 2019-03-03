@@ -54,7 +54,6 @@
                 }
             },
             "dependsOn": [
-                "[resourceId('Microsoft.Batch/batchAccounts', parameters('batchAccountName'))]"
             ]
         }
     ],
