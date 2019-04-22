@@ -1,8 +1,5 @@
 # Starter pipeline
 
-- task: Pester@8
-  inputs:
-    scriptFolder: @{Path = '$(System.DefaultWorkingDirectory)\AzureBatch\armTemplateTest.ps1';parameters@{TemplatePath='$(System.DefaultWorkingDirectory)\AzureBatch\storageAccountTemplate.json'}}
 
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -22,3 +19,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: Pester@8
+  inputs:
+    scriptFolder:@{Path='$(System.DefaultWorkingDirectory)\AzureBatch\armTemplateTest.ps1';parameters@{TemplatePath='$(System.DefaultWorkingDirectory)\AzureBatch\storageAccountTemplate.json'}}
+
