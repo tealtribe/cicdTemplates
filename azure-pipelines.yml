@@ -22,4 +22,4 @@ steps:
 
 - task: Pester@8
   inputs:
-    scriptFolder: '@{Path=''$(System.DefaultWorkingDirectory)\AzureBatch\armTemplateTest.ps1'';parameters@{TemplatePath=''$(System.DefaultWorkingDirectory)\AzureBatch\storageAccountTemplate.json''}}'
+    scriptFolder: '@{Path=''$(System.DefaultWorkingDirectory)\AzureBatch\armTemplateTest.ps1'';parameters=@{templatePath=''$(System.DefaultWorkingDirectory)\AzureBatch\storageAccountTemplate.json''}}'
