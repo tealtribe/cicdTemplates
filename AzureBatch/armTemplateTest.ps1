@@ -1,6 +1,6 @@
 param (
 	[Parameter(Mandatory=$true)]
-	[string]$TemplatePath
+	[string]$TemplatePath 
 )
 
 $templateARM = Get-Content $TemplatePath -Raw -ErrorAction SilentlyContinue
@@ -21,8 +21,8 @@ Describe 'ARM Template Validation' {
       It "Contains all required elements" {
           $Elements = '$schema',
                       'contentVersion',
-                      'parameters',
                       'outputs',
+                      'parameters',
                       'resources'                                
             $templateProperties = $template | Get-Member -MemberType NoteProperty | % Name
             $templateProperties | Should Be $Elements
