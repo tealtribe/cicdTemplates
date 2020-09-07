@@ -12,7 +12,7 @@
       },
       "APIManagementInstanceName": {
         "type": "string",
-        "defaultValue": "tealapimanagement"
+        "defaultValue": "tealapimgmt"
       },
       "PublisherName": {
         "type": "string",
