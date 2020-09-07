@@ -12,7 +12,7 @@
       },
       "APIManagementInstanceName": {
         "type": "string",
-        "defaultValue": "apimanagementcharot"
+        "defaultValue": "apimanagementteal"
       },
       "PublisherName": {
         "type": "string",
