@@ -6,7 +6,7 @@
             "value": "charotaminebatch"
           },
           "storageAccountName": {
-              "value": "01charotbatchstorage"
+              "value": "tealostorage"
             }
      }
 }
